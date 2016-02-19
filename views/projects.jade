@@ -1,0 +1,23 @@
+extends ./layout.jade
+
+block content-heading
+  h1 Projects
+
+block content
+  section(class="content" id="projects-content")
+    each item in data
+      .project-card
+        a(class="project-bar" href=item.url.github)
+        img(src=item.image alt=item.name)
+        h2= item.name
+        a(href=item.url.github)
+          span(class="btn-main" id="btn-detail") Project Page
+        a(href=item.url.github)
+          span(class="btn-main" id="btn-github") GitHub
+        if item.url.liveSite != null
+          a(href=item.url.liveSite)
+            span(class="btn-main" id="btn-live-site") Live Site
+        p(id="project-description")= item.description
+        ul
+          each value in item.technologies
+            li= value

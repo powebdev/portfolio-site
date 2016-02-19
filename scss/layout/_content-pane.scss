@@ -1,0 +1,114 @@
+#content-pane {
+	background-color: $light-bg-color;
+	color: $light-bg-primary-color;
+	width: auto;
+	flex-grow: 1;
+	@media #{$media} {
+		@media (min-width: $breakpoint-mobile-lg + 1px) {
+			height: 100%;
+			overflow-y: auto;
+		}
+	}
+}
+
+#content-heading {
+	padding-left: 24px;
+	padding-top: 24px;
+}
+
+#skills-content {
+	text-align: center;
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media #{$media} {
+	@media (max-width: $breakpoint-mobile-lg) {
+		#about-me-content, #skills-content {
+			width: 100%;
+		}
+	}
+	@media (min-width: $breakpoint-mobile-lg + 1px) {
+		#about-me-content, #skills-content {
+			width: auto;
+			
+		}
+	}
+	@media (max-width: $breakpoint-mobile-sm) {
+		#content-heading {
+			display: none;
+		}
+		#projects-content {
+			width: 100%;
+		}
+	}
+	@media (min-width: $breakpoint-mobile-sm + 1px) and (max-width: $breakpoint-mobile-md) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $one-card-width)
+		}
+	}
+	@media (min-width: $breakpoint-mobile-md + 1px) and (max-width: $breakpoint-mobile-lg) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $two-card-width)
+		}
+	}
+	@media (min-width: $breakpoint-mobile-lg + 1px) and (max-width: $breakpoint-desktop-sm) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $one-card-width)
+		}
+	}
+	@media (min-width: $breakpoint-desktop-sm + 1px) and (max-width: $breakpoint-desktop-md) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $two-card-width)
+		}
+	}
+	@media (min-width: $breakpoint-desktop-md + 1px) and (max-width: $breakpoint-desktop-lg) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $three-card-width)
+		}
+	}
+	@media (min-width: $breakpoint-desktop-lg + 1px) and (max-width: $breakpoint-desktop-xl) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $four-card-width)
+		}
+	}
+	@media (min-width: $breakpoint-desktop-xl + 1px) {
+		#projects-content {
+			width: ((2 * $card-spacing + $project-card-width) * $five-card-width)
+		}
+	}
+}
+#skills-content {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 16px 0;
+	#skill-tag-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	@media #{$media} {
+		@media (max-width: $breakpoint-mobile-sm) {
+			width: 100%;
+		}
+		@media (min-width: $breakpoint-mobile-sm + 1px) and (max-width: $breakpoint-mobile-md) {
+			width: $about-me-card-width-mobile;
+		}
+		@media (min-width: $breakpoint-mobile-md + 1px) and (max-width: $breakpoint-mobile-lg) {
+			width: $about-me-card-width-md;
+		}
+		@media (min-width: $breakpoint-mobile-lg + 1px) and (max-width: $breakpoint-desktop-sm) {
+			width: $about-me-card-width-sm;
+		}
+		@media (min-width: $breakpoint-desktop-sm + 1px) and (max-width: $breakpoint-desktop-md) {
+			width: $about-me-card-width-md;
+		}
+		@media (min-width: $breakpoint-desktop-md + 1px) {
+			width: $about-me-card-width-lg;
+		}
+	}
+}

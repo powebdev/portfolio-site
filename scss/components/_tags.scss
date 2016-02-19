@@ -1,0 +1,11 @@
+.skill-tag {
+	background-color: $tag-bg-color;
+	color: $dark-bg-primary-color;
+	@include border-radius(16px);
+	text-align: center;
+	margin: 4px;
+	padding: 8px 16px;
+	#skill-description {
+		display: none;
+	}
+}

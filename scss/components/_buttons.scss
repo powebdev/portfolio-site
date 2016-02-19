@@ -1,0 +1,16 @@
+.btn-main {
+	@include border-radius(4px);
+	background-color: $dark-bg-color;
+	color: $dark-bg-primary-color;
+	font-weight: bold;
+	display: inline-block;
+	padding: 12px 35px;
+}
+.btn-icon {
+	@include border-radius(4px);
+	background-color: $dark-bg-color;
+	color: $dark-bg-primary-color;
+	font-weight: bold;
+	display: inline;
+	padding: 12px 8px;
+}

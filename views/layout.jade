@@ -1,0 +1,19 @@
+doctype html
+html
+  include ./partials/_head.jade
+  body
+    .container
+      #nav-pane
+        header(id="nav-heading")
+          #logo
+            img(src="img/powebdev.png" alt="Logo for poWebDev")
+        include ./partials/_nav.jade
+        #spacer-div
+        #contacts
+          include ./partials/_footer.jade
+      #content-pane
+        header(id="content-heading")
+          block content-heading
+        block content
+      footer
+        include ./partials/_footer.jade

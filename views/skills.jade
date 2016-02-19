@@ -1,0 +1,17 @@
+extends ./layout.jade
+
+block content-heading
+  h1 Skills
+    
+block content
+  section(class="content" id="skills-content")
+    div
+      each item in dataIcons
+        a(href=item.url)
+          img(class="skill-icon" src=item.icon alt=item.name)
+    #skill-tag-container
+      each item in dataTags
+        .skill-tag
+          a(href=item.url)
+            span= item.name
+          span(id="skill-description")= item.description
