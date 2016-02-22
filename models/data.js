@@ -201,7 +201,7 @@ exports.projects = [
 	{
 		name: 'Portfolio Site',
 		image: 'img/projects/portfolio.png',
-		url: {liveSite: 'http://www.powebdev.com', github: ''},
+		url: {liveSite: 'http://www.powebdev.com', github: 'https://github.com/powebdev/portfolio-site'},
 		technologies: ['JavaScript', 'Node.js', 'Sass'],
 		description: 'This is where you are right now.'
 	}
