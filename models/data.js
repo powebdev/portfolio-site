@@ -3,7 +3,11 @@ var exports = module.exports = {};
 exports.myInfo = {
 	name: 'PO TONG',
 	title: 'WEB DEVELOPER',
-	bio:''
+	bio: 'Hello, my name is Po, and I am a web developer who is versed in technologies from both front-end and back-end development. During my last job, I was tasked with implementing a data acquisition program and it sparked my desire of pursuing a career in software development. I had been tinkering with coding as a hobby before that, and working on the project on a daily basis made my realize this is something I can and want to do day in and day out. So, driven by this new found passion, armed with some basic knowledge of coding, and the vast amount of resources available online, I jumped right into the field of web development. I chose the field of web development because of how fast everything is progressing and the amount of technologies available out there. I find that fasinating and look forward to learn new things everyday.',
+	email: 'potong616@gmail.com',
+	github: 'https://github.com/powebdev',
+	linkedin: 'https://www.linkedin.com/in/potong',
+	pic: 'img/po.png'
 };
 
 exports.skills = [
@@ -17,25 +21,25 @@ exports.skills = [
 		name: 'JavaScript',
 		url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 		icon: 'img/icons/javascript.svg',
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck.'
+		description: 'JavaScript'
 	},
 	{
 		name: 'Sass',
 		url: 'http://sass-lang.com/',
 		icon: 'img/icons/sass.svg',
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck.'
+		description: 'Syntatically Awesome Style Sheet'
 	},
 	{
 		name: 'HTML5',
 		url: 'http://www.w3schools.com/html/html5_intro.asp',
 		icon: 'img/icons/html5.svg',
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck.'
+		description: 'HTML5'
 	},
 	{
 		name: 'CSS3',
 		url: 'http://www.w3schools.com/css/css_intro.asp',
 		icon: 'img/icons/css3.svg',
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck.'
+		description: 'CSS3'
 	},
 	{
 		name: 'Jade',
@@ -171,34 +175,34 @@ exports.projects = [
 		image: 'img/projects/vgdb.png',
 		url: {liveSite: null, github: 'https://github.com/powebdev/catalog_project'},
 		technologies: ['Python', 'Flask'],
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck. Pig hamburger landjaeger, biltong ball tip venison shankle picanha meatloaf chicken beef ribs meatball leberkas. Landjaeger tail andouille, pork belly bresaola tongue sirloin tenderloin leberkas. Ball tip alcatra sirloin, tenderloin rump ham hock shoulder fatback spare ribs cupim. Prosciutto leberkas shankle hamburger brisket beef ribs turkey jowl.'
+		description: 'A database driven website for cataloging your favorite video games.'
 	},
 	{
 		name: 'Website Optimization',
 		image: 'img/projects/webperf.png',
 		url: {liveSite: null, github: 'https://github.com/powebdev/webperf'},
 		technologies: ['JavaScript'],
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck. Pig hamburger landjaeger, biltong ball tip venison shankle picanha meatloaf chicken beef ribs meatball leberkas. Landjaeger tail andouille, pork belly bresaola tongue sirloin tenderloin leberkas. Ball tip alcatra sirloin, tenderloin rump ham hock shoulder fatback spare ribs cupim. Prosciutto leberkas shankle hamburger brisket beef ribs turkey jowl.'
+		description: 'Optimization of existing website with the help of PageSpeed Insights and Chrome Dev Tools.'
 	},
 	{
 		name: 'Frogger',
 		image: 'img/projects/frogger.png',
 		url: {liveSite: null, github: 'https://github.com/powebdev/js_frogger'},
 		technologies: ['JavaScript'],
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck. Pig hamburger landjaeger, biltong ball tip venison shankle picanha meatloaf chicken beef ribs meatball leberkas. Landjaeger tail andouille, pork belly bresaola tongue sirloin tenderloin leberkas. Ball tip alcatra sirloin, tenderloin rump ham hock shoulder fatback spare ribs cupim. Prosciutto leberkas shankle hamburger brisket beef ribs turkey jowl.'
+		description: 'Recreation of the classic arcade game Frogger.'
 	},
 	{
 		name: 'Conference App',
 		image: 'img/projects/conference.png',
-		url: {liveSite: null, github: 'https://github.com/powebdev/p4_conference'},
+		url: {liveSite: 'https://project-4-conference-app-1152.appspot.com/', github: 'https://github.com/powebdev/p4_conference'},
 		technologies: ['Python', 'Google App Engine'],
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck. Pig hamburger landjaeger, biltong ball tip venison shankle picanha meatloaf chicken beef ribs meatball leberkas. Landjaeger tail andouille, pork belly bresaola tongue sirloin tenderloin leberkas. Ball tip alcatra sirloin, tenderloin rump ham hock shoulder fatback spare ribs cupim. Prosciutto leberkas shankle hamburger brisket beef ribs turkey jowl.'
+		description: 'A website using Google App Engine PaaS.'
 	},
 	{
 		name: 'Portfolio Site',
-		image: 'img/projects/vgdb.png',
-		url: {liveSite: null, github: ''},
+		image: 'img/projects/portfolio.png',
+		url: {liveSite: 'http://www.powebdev.com', github: ''},
 		technologies: ['JavaScript', 'Node.js', 'Sass'],
-		description: 'Bacon ipsum dolor amet meatloaf swine brisket cupim chuck. Pig hamburger landjaeger, biltong ball tip venison shankle picanha meatloaf chicken beef ribs meatball leberkas. Landjaeger tail andouille, pork belly bresaola tongue sirloin tenderloin leberkas. Ball tip alcatra sirloin, tenderloin rump ham hock shoulder fatback spare ribs cupim. Prosciutto leberkas shankle hamburger brisket beef ribs turkey jowl.'
+		description: 'This is where you are right now.'
 	}
 ];

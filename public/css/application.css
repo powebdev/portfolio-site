@@ -124,7 +124,7 @@ h1, h2, h3, h4 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
-  padding: 8px; }
+  padding: 16px; }
   .about-me-card #me-portrait img {
     width: 150px;
     height: 150px;
@@ -151,6 +151,8 @@ h1, h2, h3, h4 {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #999; }
+  .about-me-card #about-me {
+    line-height: 23px; }
 
 @media screen and (max-width: 480px) {
   .about-me-card {
@@ -188,7 +190,7 @@ h1, h2, h3, h4 {
 
 @media screen and (min-width: 1281px) {
   .about-me-card {
-    width: 800px; } }
+    width: 600px; } }
 
 .skill-tag {
   background-color: dimgrey;
@@ -378,7 +380,7 @@ nav ul {
 
 @media screen and (min-width: 1281px) {
   #skills-content {
-    width: 800px; } }
+    width: 600px; } }
 
 footer {
   text-align: center;

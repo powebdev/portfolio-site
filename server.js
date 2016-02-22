@@ -3,6 +3,7 @@ var express = require('express');
 
 var skillData = data.skills;
 var projectData = data.projects;
+var myInfo = data.myInfo;
 
 var app = express();
 
@@ -12,17 +13,17 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-	res.render('index', {title: 'Hey', message: 'Hello everyone!'});
+	res.render('index', {aboutMe: myInfo, title: 'Hey', message: 'Hello everyone!'});
 });
 
 app.get('/skills', function(req, res) {
 	var skillIcons = skillData.filter(isIconNotNull);
 	var skillTags = skillData.filter(isIconNull);
-	res.render('skills', {dataTags: skillTags, dataIcons: skillIcons});
+	res.render('skills', {aboutMe: myInfo, dataTags: skillTags, dataIcons: skillIcons});
 });
 
 app.get('/projects', function(req, res) {
-	res.render('projects', {data: projectData});
+	res.render('projects', {aboutMe: myInfo, data: projectData});
 });
 
 app.get('/showcase', function(req, res) {
